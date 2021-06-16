@@ -1,0 +1,54 @@
+
+
+    <footer class="Footer">
+      <div class="container-fluid">
+        
+          
+        <!-- The reason the footer wasn't stretching anymore was because I wrapped this .row div in another .conatiner div, 
+            and forgot to undo it when I was done -->      
+        <div class="row" style=" background-color:#373a36;">
+                <div class="container">
+        <!-- div below had an id of "address container" which doesn't work because unlike classes you can't have multiple ids. I changed it to footeraddress. 
+        If you're using bootstrap "container" it should go in the class attribute-->
+            <div id="footeraddress" class="col-md-9" style="padding-top:20px; padding-bottom: 10px;">
+              <a title="uscupstate.edu" href="https://www.uscupstate.edu/" style="text-decoration:none; color:white;">
+                <h4 style="color:white;">USC Upstate</h4>
+                <p style="font-size:14px;">800 University Way<br>
+                  Spartanburg, SC 29303<br>
+                  864-503-5000 | 800-277-8727<br>
+                  <a title="info@uscupstate.edu" href="mailto:info@uscupstate.edu" style= "color: white;">info@uscupstate.edu</a>
+                </p>
+            </div>
+      <!-- div below had an id of "login container" which doesn't work because unlike classes you can't have multiple ids. 
+        Trying to target it with just #login wouldn't have worked. I changed it to footerlogin -->
+  
+      <!-- instead of using CSS floats in the media queary I gave "footeraddress" the class of "col-md-9" and "footerlogin" the class of "col-md-3".
+      This means that when the screen reaches "medium" size (768px) the address div takes 9/12 of the space and the login div takes 3/12. 
+      It used to be common to use "float" to position things, but it generally causes more problems --> 
+          <div id="footerlogin" class="col-md-3">
+                     <div class="btn-group dropup" style="padding-top: 20px;">
+      <!-- the only change to the CSS I did was add a rule to make #footerloginbutton 100% width, but that's just because I thought it looked better -->
+                  <button id="footerloginbutton" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: #373a36; border-color: #fff">Sign In  <span class="caret"></span></button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: #00703C; padding-left: 5px; font-size:16px; text-decoration: none;">
+                    <a class="dropdown-item" href="https://pascal-uscup.primo.exlibrisgroup.com/discovery/login?vid=01PASCAL_USCUP:UPTEST3" target="_blank" style="color: white;">My Library Account</a>
+                    <a class="dropdown-item" href="https://ill3.tcl.sc.edu/illiad/" target="_blank" style="color: white;">InterLibrary Loan</a>
+                    <a class="dropdown-item" href="https://blackboard.uscupstate.edu/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_1_1" target="_blank" style="color: white;">Blackboard</a>
+                    <a class="dropdown-item" href="https://my.sc.edu/" target="_blank" style="padding-right: 45px; color: white;">My.sc.edu</a>
+                    <a class="dropdown-item" href="https://uscupstate.libapps.com/libapps/login.php?site_id=774" target="_blank" style="color: white;">Staff Login</a>
+                  </div>
+      <br>
+      <br>
+      <div id="form_button_4a2e665cf6859e2b9ba0f9660fac295f"><script type="text/javascript" src="https://uscupstate.libwizard.com/embed_button.php?id=4a2e665cf6859e2b9ba0f9660fac295f&noheader=0&type=button&open-button-text=Give%20Us%20Feedback&open-button-color=%23373a36&text-color=%23ffffff" crossorigin="anonymous"></script>
+      </div>
+      <div class="social" style="padding-bottom: 10px;">
+      <a href="www.facebook.com/theuscupstatelibrary" class="fa fa-facebook" style="background: #373a36;  color: white; padding: 5px;  font-size: 30px;  width: 30px;  text-align: center; text-decoration: none;  margin: 5px 2px;"></a>
+      <a href="www.twitter.com/uscupstatelib" class="fa fa-twitter" style=" background: #373a36;  color: white; padding: 5px;  font-size: 30px;  width: 30px;  text-align: center; text-decoration: none;  margin: 5px 2px;"></a>
+      <a href="www.instagram.com/uscupstatelib" class="fa fa-instagram" style="background: #373a36;  color: white; padding: 5px;  font-size: 30px;  width: 30px; text-align: center;text-decoration: none;  margin: 5px 2px;"></a>
+       <a href="https://www.youtube.com/user/USCUpstateLibrary" class="fa fa-youtube" style=" background: #373a36;  color: white; padding: 5px;  font-size: 30px;  width: 30px; text-align: center; text-decoration: none;  margin: 5px 2px;"></a>
+              </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </footer>
